@@ -15,8 +15,8 @@ class __TwigTemplate_d06e866fd6f126699b0dad0998414d4dfbf51789e7da88a11fbdf561d57
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_71f54b5d4513a3254dd32dd3f2e84f163b77dda41c8ad42a1d011e1e931c9b4d = $this->env->getExtension("native_profiler");
-        $__internal_71f54b5d4513a3254dd32dd3f2e84f163b77dda41c8ad42a1d011e1e931c9b4d->enter($__internal_71f54b5d4513a3254dd32dd3f2e84f163b77dda41c8ad42a1d011e1e931c9b4d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FOSUserBundle:Registration:register_content.html.twig"));
+        $__internal_c8be445b94a36257cfd7466d99b121de735121e5c1ffe339e091c667da260c24 = $this->env->getExtension("native_profiler");
+        $__internal_c8be445b94a36257cfd7466d99b121de735121e5c1ffe339e091c667da260c24->enter($__internal_c8be445b94a36257cfd7466d99b121de735121e5c1ffe339e091c667da260c24_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FOSUserBundle:Registration:register_content.html.twig"));
 
         // line 2
         echo "<div>
@@ -81,15 +81,16 @@ class __TwigTemplate_d06e866fd6f126699b0dad0998414d4dfbf51789e7da88a11fbdf561d57
         } else {
             // line 46
             echo "          <div class=\"col-sm-10\"> 
-            ";
-            // line 47
-            echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "roles", array()), 'row');
-            echo "
+            <select style=\"\" id=\"fos_user_registration_form_roles\" name=\"fos_user_registration_form[roles][]\" required=\"required\" multiple=\"multiple\">
+                <option value=\"ROLE_ADMIN\" >ADMINISTRADOR</option>
+                <option value=\"ROLE_SUPERADMIN\" >SUPERADMINISTRADOR</option>
+                <option value=\"ROLE_USER\"  selected=\"selected\">USUARIO</option>
+            </select>
           </div>
       
       ";
         }
-        // line 51
+        // line 55
         echo "            
       
             <input id=\"botonPublicar\" class=\"btn btn-info\" type=\"submit\" id=\"_submit\" name=\"_submit\" value=\"Registrarse\" style='width:100%; height:40px; font-size:20px' />
@@ -101,12 +102,12 @@ class __TwigTemplate_d06e866fd6f126699b0dad0998414d4dfbf51789e7da88a11fbdf561d57
 
 
 ";
-        // line 61
+        // line 65
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_end');
         echo "
 </div>";
         
-        $__internal_71f54b5d4513a3254dd32dd3f2e84f163b77dda41c8ad42a1d011e1e931c9b4d->leave($__internal_71f54b5d4513a3254dd32dd3f2e84f163b77dda41c8ad42a1d011e1e931c9b4d_prof);
+        $__internal_c8be445b94a36257cfd7466d99b121de735121e5c1ffe339e091c667da260c24->leave($__internal_c8be445b94a36257cfd7466d99b121de735121e5c1ffe339e091c667da260c24_prof);
 
     }
 
@@ -122,7 +123,7 @@ class __TwigTemplate_d06e866fd6f126699b0dad0998414d4dfbf51789e7da88a11fbdf561d57
 
     public function getDebugInfo()
     {
-        return array (  105 => 61,  93 => 51,  86 => 47,  83 => 46,  71 => 36,  69 => 35,  62 => 31,  44 => 16,  40 => 15,  25 => 3,  22 => 2,);
+        return array (  106 => 65,  94 => 55,  83 => 46,  71 => 36,  69 => 35,  62 => 31,  44 => 16,  40 => 15,  25 => 3,  22 => 2,);
     }
 }
 /* {% trans_default_domain 'FOSUserBundle' %}*/
@@ -171,7 +172,11 @@ class __TwigTemplate_d06e866fd6f126699b0dad0998414d4dfbf51789e7da88a11fbdf561d57
 /*         </div>*/
 /*         {% else %}*/
 /*           <div class="col-sm-10"> */
-/*             {{ form_row(form.roles) }}*/
+/*             <select style="" id="fos_user_registration_form_roles" name="fos_user_registration_form[roles][]" required="required" multiple="multiple">*/
+/*                 <option value="ROLE_ADMIN" >ADMINISTRADOR</option>*/
+/*                 <option value="ROLE_SUPERADMIN" >SUPERADMINISTRADOR</option>*/
+/*                 <option value="ROLE_USER"  selected="selected">USUARIO</option>*/
+/*             </select>*/
 /*           </div>*/
 /*       */
 /*       {% endif %}*/
