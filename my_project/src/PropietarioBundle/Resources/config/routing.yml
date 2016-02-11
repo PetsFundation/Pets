@@ -1,0 +1,7 @@
+propietario_propietario:
+    resource: "@PropietarioBundle/Resources/config/routing/propietario.yml"
+    prefix:   /propietario
+
+propietario_homepage:
+    path:     /
+    defaults: { _controller: PropietarioBundle:Default:index }

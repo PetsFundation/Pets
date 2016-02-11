@@ -1,0 +1,45 @@
+paginas_index:
+    resource: "@PaginasIndexBundle/Resources/config/routing.yml"
+    prefix:   /
+
+index:
+    resource: "@IndexBundle/Resources/config/routing.yml"
+    prefix:   /
+
+anuncios:
+    resource: "@AnunciosBundle/Resources/config/routing.yml"
+    prefix:   /
+
+propietario:
+    resource: "@PropietarioBundle/Resources/config/routing.yml"
+    prefix:   /
+
+animales:
+    resource: "@AnimalesBundle/Controller/"
+    type:     annotation
+    prefix:   /
+    
+propietario:
+    resource: "@PropietarioBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+    
+animales_animales:
+    resource: "@AnimalesBundle/Resources/config/routing/animales.yml"
+    prefix:   /animales
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+#
+#payum_capture:
+#    resource: "@PayumBundle/Resources/config/routing/capture.xml"
+#
+#payum_authorize:
+#    resource: "@PayumBundle/Resources/config/routing/authorize.xml"
+#
+#payum_notify:
+#    resource: "@PayumBundle/Resources/config/routing/notify.xml"

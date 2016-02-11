@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Lista de animales</h1>
+
+    <table border="">
+        <thead>
+            <tr>
+                <th>Id&nbsp;&nbsp;&nbsp;</th>
+                <th>Nombre&nbsp;&nbsp;&nbsp;</th>
+                <th>Tipo&nbsp;&nbsp;&nbsp;</th>
+                <th>Raza&nbsp;&nbsp;&nbsp;</th>
+                <th>Sexo&nbsp;&nbsp;&nbsp;</th>
+                <th>Nacimiento&nbsp;&nbsp;&nbsp;</th>
+                <th>Propietario&nbsp;&nbsp;</th>
+                <th>Pedigri&nbsp;&nbsp;&nbsp;</th>
+                <th>Actions&nbsp;&nbsp;&nbsp;</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for animale in animales %}
+            <tr>
+                <td><a href="{{ path('animales_show', { 'id': animale.id }) }}">{{ animale.id }}</a></td>
+                <td>{{ animale.nombre }}&nbsp;&nbsp;</td>
+                <td>{{ animale.tipo }}&nbsp;&nbsp;</td>
+                <td>{{ animale.raza }}&nbsp;&nbsp;</td>
+                <td>{{ animale.sexo }}&nbsp;&nbsp;</td>
+                <td>{% if animale.nacimiento %}{{ animale.nacimiento|date('Y-m-d') }}&nbsp;&nbsp;{% endif %}</td>
+                <td>{{ animale.propietario }}&nbsp;&nbsp;</td>
+                <td>{% if animale.pedigri %}Yes{% else %}No{% endif %}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('animales_show', { 'id': animale.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('animales_edit', { 'id': animale.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('animales_new') }}">Create a new entry</a>
+        </li>
+    </ul>
+{% endblock %}
