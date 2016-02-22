@@ -1,3 +1,11 @@
+contactame:
+    resource: "@ContactameBundle/Resources/config/routing.yml"
+    prefix:   /
+
+donaciones:
+    resource: "@DonacionesBundle/Resources/config/routing.yml"
+    prefix:   /
+
 paginas_index:
     resource: "@PaginasIndexBundle/Resources/config/routing.yml"
     prefix:   /

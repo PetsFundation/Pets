@@ -19,8 +19,13 @@ class __TwigTemplate_c0f2a2e488b56916f6f0ef4c1fbe69be9dc05100218faced8b8c2e289c9
 
     protected function doDisplay(array $context, array $blocks = array())
     {
+<<<<<<< HEAD
         $__internal_49689f5e0a083c699f6c1892dfb4f5aef7bd9f7c9c1f0338f7d9a729a4cd44b6 = $this->env->getExtension("native_profiler");
         $__internal_49689f5e0a083c699f6c1892dfb4f5aef7bd9f7c9c1f0338f7d9a729a4cd44b6->enter($__internal_49689f5e0a083c699f6c1892dfb4f5aef7bd9f7c9c1f0338f7d9a729a4cd44b6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FOSUserBundle::layout.html.twig"));
+=======
+        $__internal_8f1fae7ace58fe54d1334d68b7b7585aa9b5ce92539e7fb5407e591af300a271 = $this->env->getExtension("native_profiler");
+        $__internal_8f1fae7ace58fe54d1334d68b7b7585aa9b5ce92539e7fb5407e591af300a271->enter($__internal_8f1fae7ace58fe54d1334d68b7b7585aa9b5ce92539e7fb5407e591af300a271_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FOSUserBundle::layout.html.twig"));
+>>>>>>> david3
 
         // line 1
         echo "<!DOCTYPE html>
@@ -89,16 +94,25 @@ class __TwigTemplate_c0f2a2e488b56916f6f0ef4c1fbe69be9dc05100218faced8b8c2e289c9
 \t\t\t\t<!-- Start Nav Structure -->
 \t\t\t\t<button class=\"cn-button\" id=\"cn-button\">+</button>
 \t\t\t\t<div class=\"cn-wrapper\" id=\"cn-wrapper\" style=\"margin-bottom: 10px\"> <!-- mover posicion de los botones del menu -->
-\t\t\t\t    <ul>
-\t\t\t\t      <li><a href=\"#\"><img src=\"/my_project/web/bundles/index/imgs/iconsMenu/camada.png\" width=\"45px\"></a></li>
-\t\t\t\t      <li><a href=\"#\"><img src=\"/my_project/web/bundles/index/imgs/iconsMenu/adoptar.png\" width=\"45px\"></indexan></a></li>
-\t\t\t\t      <li><a href=\"#\"><img src=\"/my_project/web/bundles/index/imgs/iconsMenu/home.png\" width=\"40px\"></a></li>
-\t\t\t\t      <li><a href=\"#\"><img src=\"/my_project/web/bundles/index/imgs/iconsMenu/buscar.png\" width=\"30px\"></a></li>
-\t\t\t\t       <li><a href=\"#\"><img src=\"/my_project/web/bundles/index/imgs/iconsMenu/donar.png\" width=\"45px\"></a></li>
-
-
-
-\t\t\t\t     </ul>
+\t\t\t\t    \t<ul>
+\t\t\t\t\t<li><a onclick=\"location.href='";
+        // line 71
+        echo $this->env->getExtension('routing')->getPath("paginas_sebusca");
+        echo "'\" ><img src=\"/my_project/web/bundles/index/imgs/iconsMenu/buscarperdido.png\" width=\"45px\"></a></li>
+\t\t\t\t\t<li><a onclick=\"location.href='";
+        // line 72
+        echo $this->env->getExtension('routing')->getPath("paginas_adopciones");
+        echo "'\"><img src=\"/my_project/web/bundles/index/imgs/iconsMenu/adoptar.png\" width=\"50px\"></span></a></li>
+\t\t\t\t\t<li><a onclick=\"location.href='";
+        // line 73
+        echo $this->env->getExtension('routing')->getPath("paginas_protectoras");
+        echo "'\"><img src=\"/my_project/web/bundles/index/imgs/iconsMenu/refugio.png\" width=\"45px\"></a></li>
+\t\t\t\t\t<li><a onclick=\"location.href='";
+        // line 74
+        echo $this->env->getExtension('routing')->getPath("paginas_camadas");
+        echo "'\"><img src=\"/my_project/web/bundles/index/imgs/iconsMenu/camada.png\" width=\"45px\"></a></li>
+\t\t\t\t\t<li><a href=\"/my_project/phpBB3/\"><img src=\"/my_project/web/bundles/index/imgs/iconsMenu/forum.png\" width=\"45px\"></a></li>
+\t\t\t\t</ul>
 \t\t\t\t</div>
 \t\t\t\t<div id=\"cn-overlay\" class=\"cn-overlay\"></div>
 \t\t\t\t<!-- End Nav Structure -->
@@ -108,85 +122,137 @@ class __TwigTemplate_c0f2a2e488b56916f6f0ef4c1fbe69be9dc05100218faced8b8c2e289c9
 \t<div class=\"row\">
 \t\t<div class=\"col-md-12\">
 \t\t\t<nav class=\"navbar navbar-default navbar-fixed-top\" role=\"navigation\" style=\"height:95px;\">
-\t\t\t\t<div class=\"navbar-header\" ><center>
-\t\t\t\t\t<a href=\"";
-        // line 90
+\t\t\t\t\t\t<div class=\"navbar-header\" >
+\t\t\t\t\t\t\t<a href=\"";
+        // line 87
         echo $this->env->getExtension('routing')->getPath("ani");
         echo "\">
-\t\t\t\t\t\t<button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" style=\"border:0;\">
-\t\t\t\t\t\t<img src=\"/my_project/web/bundles/index/imgs/publicar.png\" class=\"visible-xs\">
-\t\t\t\t\t\t</button>
-\t\t\t\t\t</a></center>
-\t\t\t\t\t<a class=\"navbar-brand\" href=\"";
-        // line 95
+\t\t\t\t\t\t\t\t<button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" style=\"border:0;\">
+\t\t\t\t\t\t\t\t\t<img src=\"/my_project/web/bundles/index/imgs/publicar.png\" class=\"visible-xs\">
+\t\t\t\t\t\t\t\t</button>
+\t\t\t\t\t\t\t</a>
+\t\t\t\t\t\t\t<a class=\"navbar-brand container-fluid\" style=\"height:100px\" href=\"";
+        // line 92
         echo $this->env->getExtension('routing')->getPath("index_homepage");
-        echo "\"><img src=\"/my_project/web/bundles/index/imgs/logo.png\" width=\"160px\"></a>
-\t\t\t\t</div>
-\t\t\t\t<ul class=\"nav navbar-nav nav-justified hidden-xs\" role=\"menu\">
- \t\t\t\t\t<li>
-\t\t\t\t\t\t\t<button type=\"submit\" class=\"btn btn-default hidden-xs\"  style=\"border: 0px;border-radius: 27px 27px 27px 27px;
-\t\t\t\t\t\t\t-moz-border-radius: 27px 27px 27px 27px;
-\t\t\t\t\t\t\t-webkit-border-radius: 27px 27px 27px 27px; margin-top: -55px; margin-left:45%; margin-top:-32px;\">
-\t\t\t\t\t\t\t<img src=\"/my_project/web/bundles/index/imgs/publicar.png\" onClick=\"";
-        // line 102
+        echo "\"><img src=\"/my_project/web/bundles/index/imgs/logo.png\" width=\"160px\"> </a>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t<ul class=\"nav navbar-nav nav-justified hidden-xs\" role=\"menu\">
+\t\t\t\t\t\t\t<li>
+\t\t\t\t\t\t\t\t<!--<button type=\"submit\" class=\"btn btn-default hidden-xs\"  style=\"border: 0px;border-radius: 27px 27px 27px 27px;
+\t\t\t\t\t\t\t\t-moz-border-radius: 27px 27px 27px 27px; -webkit-border-radius: 27px 27px 27px 27px; margin-left:40%; margin-top:-32px;\">
+\t\t\t\t\t\t\t\t<img src=\"/my_project/web/bundles/index/imgs/publicar.png\" onClick=\"location.href=''\"/>&nbsp;&nbsp;&nbsp;Publicar anuncio
+\t\t\t\t\t\t\t\t</button>-->
+\t\t\t\t\t\t\t\t<button class=\"btn btn-default hidden-xs\"  style=\"border: 0px;border-radius: 27px 27px 27px 27px;
+\t\t\t\t\t\t\t\t-moz-border-radius: 27px 27px 27px 27px; -webkit-border-radius: 27px 27px 27px 27px; margin-left:40%; margin-top:-130px;\" onClick=\"location.href='";
+        // line 101
         echo $this->env->getExtension('routing')->getPath("ani");
-        echo "\"/>&nbsp;Publicar anuncio
-\t\t\t\t\t\t\t</button>
-\t\t\t\t<div class=\"navbar-right container-fluid \" >
-\t\t\t\t\t\t<div style=\"background-color:white; padding:5px; margin-right:13px; margin-top:-32px; border-radius: 15px;\">
-            ";
-        // line 106
+        echo "'\" value=\"publicar anuncio\">
+\t\t\t\t\t\t\t\t\t<img src=\"/my_project/web/bundles/index/imgs/publicar.png\">&nbsp;&nbsp;&nbsp; Publicar anuncio
+\t\t\t\t\t\t\t\t</button>
+\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t<div class=\"navbar-right container-fluid \" >
+\t\t\t\t\t\t\t\t<div style=\"background-color:white; padding:5px; margin-right:13px; margin-top:-105px; border: 0px;border-radius: 27px 27px 27px 27px;
+\t\t\t\t\t\t\t\t-moz-border-radius: 27px 27px 27px 27px; -webkit-border-radius: 27px 27px 27px 27px;\">
+\t\t\t\t\t\t\t\t\t";
+        // line 108
         if ($this->env->getExtension('security')->isGranted("IS_AUTHENTICATED_REMEMBERED")) {
-            // line 107
-            echo "                    Estás logueado como: ";
-            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()), "username", array()), "html", null, true);
-            echo " <br><center>
-                <a href=\"";
-            // line 108
+            // line 109
+            echo "\t\t\t\t\t\t\t\t\t\t<img src=\"/my_project/web/bundles/index/imgs/user.png\">&nbsp;&nbsp; 
+\t\t\t\t\t\t\t\t\t\t<a style=\"height:-150px;\" href=\"http://pruebaaaspets-daflpa.c9users.io/my_project/web/app_dev.php/profile/\">
+\t\t\t\t\t\t\t\t\t\t\t";
+            // line 111
+            echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("Perfil", array(), "FOSUserBundle"), "html", null, true);
+            echo "
+\t\t\t\t\t\t\t\t\t\t</a> | 
+\t\t\t\t\t\t\t\t\t\t<a style=\"height:-150px;\" href=\"";
+            // line 113
             echo $this->env->getExtension('routing')->getPath("fos_user_security_logout");
             echo "\">
-                    ";
-            // line 109
-            echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("Salir", array(), "FOSUserBundle"), "html", null, true);
+\t\t\t\t\t\t\t\t\t\t\t";
+            // line 114
+            echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("Cerrar sesión", array(), "FOSUserBundle"), "html", null, true);
             echo "
-                </a></center>
-            ";
+\t\t\t\t\t\t\t\t\t\t</a>&nbsp;&nbsp; 
+\t\t\t\t\t\t\t\t\t\t<center>
+\t\t\t\t\t\t\t\t\t\t</center>
+\t\t\t\t\t\t\t\t\t";
         } else {
-            // line 112
-            echo "                <a href=\"";
+            // line 119
+            echo "\t\t\t\t\t\t\t\t\t\t<a style=\"height:-150px; text-decoration:none;\" href=\"";
             echo $this->env->getExtension('routing')->getPath("fos_user_security_login");
-            echo "\">";
-            echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("Iniciar sesión", array(), "FOSUserBundle"), "html", null, true);
+            echo "\"><img src=\"/my_project/web/bundles/index/imgs/user.png\">&nbsp;";
+            echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("   Mi cuenta", array(), "FOSUserBundle"), "html", null, true);
             echo "</a>
-            ";
+\t\t\t\t\t\t\t\t\t";
         }
-        // line 114
-        echo "        </div>
-
-        </div>\t
- \t\t\t\t</ul>
-\t\t\t\t\t\t\t\t<!--
-\t\t\t\t<form class=\"navbar-right\" style=\"margin-top:10px;\">
-\t\t\t\t\t<a href=\"publicar.html\">
-\t\t\t\t\t\t\t<button type=\"submit\" class=\"btn btn-default hidden-xs\" style=\"border: 0px;border-radius: 27px 27px 27px 27px;
-\t\t\t\t\t\t\t-moz-border-radius: 27px 27px 27px 27px;
-\t\t\t\t\t\t\t-webkit-border-radius: 27px 27px 27px 27px; margin-right:390px;\">
-\t\t\t\t\t\t\t<img src=\"imgs/publicar.png\"/>&nbindex;&nbindex;&nbindex;Publicar anuncio
-\t\t\t\t\t\t\t</button>
+        // line 121
+        echo "\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t";
+        // line 122
+        if ($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "request", array()), "hasPreviousSession", array())) {
+            // line 123
+            echo "\t\t\t\t\t\t\t\t\t";
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session", array()), "flashbag", array()), "all", array(), "method"));
+            foreach ($context['_seq'] as $context["type"] => $context["messages"]) {
+                // line 124
+                echo "\t\t\t\t\t\t\t\t\t\t";
+                $context['_parent'] = $context;
+                $context['_seq'] = twig_ensure_traversable($context["messages"]);
+                foreach ($context['_seq'] as $context["_key"] => $context["message"]) {
+                    // line 125
+                    echo "\t\t\t\t\t\t\t\t\t\t\t<div class=\"flash-";
+                    echo twig_escape_filter($this->env, $context["type"], "html", null, true);
+                    echo "\">
+\t\t\t\t\t\t\t\t\t\t\t\t";
+                    // line 126
+                    echo twig_escape_filter($this->env, $context["message"], "html", null, true);
+                    echo "
+\t\t\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t\t\t";
+                }
+                $_parent = $context['_parent'];
+                unset($context['_seq'], $context['_iterated'], $context['_key'], $context['message'], $context['_parent'], $context['loop']);
+                $context = array_intersect_key($context, $_parent) + $_parent;
+                // line 129
+                echo "\t\t\t\t\t\t\t\t\t";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['type'], $context['messages'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 130
+            echo "\t\t\t\t\t\t\t\t";
+        }
+        // line 131
+        echo "\t\t\t\t\t\t\t</div>\t\t
+\t\t\t\t\t\t</ul>
+\t\t\t\t\t\t<!--
+\t\t\t\t\t\t<form class=\"navbar-right\" style=\"margin-top:10px;\">
+\t\t\t\t\t\t<a href=\"publicar.html\">
+\t\t\t\t\t\t<button type=\"submit\" class=\"btn btn-default hidden-xs\" style=\"border: 0px;border-radius: 27px 27px 27px 27px;
+\t\t\t\t\t\t-moz-border-radius: 27px 27px 27px 27px;
+\t\t\t\t\t\t-webkit-border-radius: 27px 27px 27px 27px; margin-right:390px;\">
+\t\t\t\t\t\t<img src=\"imgs/publicar.png\"/>&nbsp;&nbsp;&nbsp;Publicar anuncio
+\t\t\t\t\t\t</button>
 \t\t\t\t\t\t
 \t\t\t\t\t\t</a>
-\t\t\t\t</form>-->
-\t\t
-\t\t\t</nav>
+\t\t\t\t\t\t</form>-->
+\t\t\t\t\t\t<div class=\"navbar-right container-fluid\" style=\"margin-top:7px;\">
+\t\t\t\t\t\t\t<img class=\"visible-xs\" src=\"/my_project/web/bundles/index/imgs/user.png\" onclick=\"location.href='";
+        // line 145
+        echo $this->env->getExtension('routing')->getPath("fos_user_security_login");
+        echo "';\" style=\"float: right; margin-right: 10px\"><br>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t</nav>
 \t\t\t
 \t\t\t<center>
-\t\t\t<div class=\"jumbotron\" style=\"margin-top: 120px; margin-bottom: 50px; width:50%; background-color:white;\">
+\t\t\t<div class=\"jumbotron\" style=\"margin-top: 120px; margin-bottom: 50px; width:100%; background-color:white;\">
 \t\t\t
 \t\t\t\t";
-        // line 135
+        // line 152
         $this->displayBlock('fos_user_content', $context, $blocks);
-        // line 137
-        echo "        
+        // line 154
+        echo "       
 \t\t\t</div>
 \t\t\t</center>
 \t\t</div>
@@ -195,12 +261,11 @@ class __TwigTemplate_c0f2a2e488b56916f6f0ef4c1fbe69be9dc05100218faced8b8c2e289c9
 </div>
        
 
-<div id=\"footer\" style=\"position: fixed; bottom: 0; width: 100%; height: 40px; background-color: #00BCD4;text-align: right; line-height: 40px;\">
-      <div class=\"container\" >
-        <p class=\"text-muted credit\" ><font color=\"#FFFFFF\">Pet's | Copyright © 2016 - 2017</font></p>
-
-      </div>
-    </div>
+<div id=\"footer\" style=\"position: fixed; bottom: 0; width: 100%; height: 50px; background-color: #00BCD4;text-align: right; line-height: 40px;\">
+            <div class=\"container\" >
+                <p class=\"text-muted credit\" ><font color=\"#FFFFFF\">Pet's | Copyright © 2016</font></p>
+            </div>
+            </div>
 
 
     <!--<script src=\"js/jquery.min.js\"></script>
@@ -211,9 +276,9 @@ class __TwigTemplate_c0f2a2e488b56916f6f0ef4c1fbe69be9dc05100218faced8b8c2e289c9
 \t\t<script src=\"js/demo1.js\"></script>-->
 \t\t
 \t\t";
-        // line 161
+        // line 177
         $this->displayBlock('javascripts1', $context, $blocks);
-        // line 168
+        // line 184
         echo "\t\t<!-- fin menu redondo -->   
   </body>
 </html>
@@ -222,15 +287,24 @@ class __TwigTemplate_c0f2a2e488b56916f6f0ef4c1fbe69be9dc05100218faced8b8c2e289c9
 </html>
 ";
         
+<<<<<<< HEAD
         $__internal_49689f5e0a083c699f6c1892dfb4f5aef7bd9f7c9c1f0338f7d9a729a4cd44b6->leave($__internal_49689f5e0a083c699f6c1892dfb4f5aef7bd9f7c9c1f0338f7d9a729a4cd44b6_prof);
+=======
+        $__internal_8f1fae7ace58fe54d1334d68b7b7585aa9b5ce92539e7fb5407e591af300a271->leave($__internal_8f1fae7ace58fe54d1334d68b7b7585aa9b5ce92539e7fb5407e591af300a271_prof);
+>>>>>>> david3
 
     }
 
     // line 43
     public function block_estilos($context, array $blocks = array())
     {
+<<<<<<< HEAD
         $__internal_c56dcf314f52f3ad28bcee20009e51ff2d96ca9101c0c933aa495a5c4722f4bf = $this->env->getExtension("native_profiler");
         $__internal_c56dcf314f52f3ad28bcee20009e51ff2d96ca9101c0c933aa495a5c4722f4bf->enter($__internal_c56dcf314f52f3ad28bcee20009e51ff2d96ca9101c0c933aa495a5c4722f4bf_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "estilos"));
+=======
+        $__internal_7e7560afa09610f04a99af394896e5a08c3e0763d29164828e32332111e34edd = $this->env->getExtension("native_profiler");
+        $__internal_7e7560afa09610f04a99af394896e5a08c3e0763d29164828e32332111e34edd->enter($__internal_7e7560afa09610f04a99af394896e5a08c3e0763d29164828e32332111e34edd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "estilos"));
+>>>>>>> david3
 
         // line 44
         echo "    <link href=\"";
@@ -254,15 +328,24 @@ class __TwigTemplate_c0f2a2e488b56916f6f0ef4c1fbe69be9dc05100218faced8b8c2e289c9
         echo "\" type=\"text/css\" rel=\"stylesheet\" />
 \t\t";
         
+<<<<<<< HEAD
         $__internal_c56dcf314f52f3ad28bcee20009e51ff2d96ca9101c0c933aa495a5c4722f4bf->leave($__internal_c56dcf314f52f3ad28bcee20009e51ff2d96ca9101c0c933aa495a5c4722f4bf_prof);
+=======
+        $__internal_7e7560afa09610f04a99af394896e5a08c3e0763d29164828e32332111e34edd->leave($__internal_7e7560afa09610f04a99af394896e5a08c3e0763d29164828e32332111e34edd_prof);
+>>>>>>> david3
 
     }
 
     // line 50
     public function block_javascripts($context, array $blocks = array())
     {
+<<<<<<< HEAD
         $__internal_8168f1c56a448836563ad539b04b4faf44dfca06c212c4d00953019eaf9366d1 = $this->env->getExtension("native_profiler");
         $__internal_8168f1c56a448836563ad539b04b4faf44dfca06c212c4d00953019eaf9366d1->enter($__internal_8168f1c56a448836563ad539b04b4faf44dfca06c212c4d00953019eaf9366d1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+=======
+        $__internal_a8f366815d238d1d34ed4c84f71dcd0d2ea4ef622bec9ca627b9a9dffaedc57f = $this->env->getExtension("native_profiler");
+        $__internal_a8f366815d238d1d34ed4c84f71dcd0d2ea4ef622bec9ca627b9a9dffaedc57f->enter($__internal_a8f366815d238d1d34ed4c84f71dcd0d2ea4ef622bec9ca627b9a9dffaedc57f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+>>>>>>> david3
 
         // line 51
         echo "\t\t<script src=\"";
@@ -270,52 +353,74 @@ class __TwigTemplate_c0f2a2e488b56916f6f0ef4c1fbe69be9dc05100218faced8b8c2e289c9
         echo "\" type=\"text/javascript\"></script>
 \t\t";
         
+<<<<<<< HEAD
         $__internal_8168f1c56a448836563ad539b04b4faf44dfca06c212c4d00953019eaf9366d1->leave($__internal_8168f1c56a448836563ad539b04b4faf44dfca06c212c4d00953019eaf9366d1_prof);
+=======
+        $__internal_a8f366815d238d1d34ed4c84f71dcd0d2ea4ef622bec9ca627b9a9dffaedc57f->leave($__internal_a8f366815d238d1d34ed4c84f71dcd0d2ea4ef622bec9ca627b9a9dffaedc57f_prof);
+>>>>>>> david3
 
     }
 
-    // line 135
+    // line 152
     public function block_fos_user_content($context, array $blocks = array())
     {
+<<<<<<< HEAD
         $__internal_bc266790d57edd81c79cda52c3e9e0df427e108fe6324fd3b90a2be35a5f8c61 = $this->env->getExtension("native_profiler");
         $__internal_bc266790d57edd81c79cda52c3e9e0df427e108fe6324fd3b90a2be35a5f8c61->enter($__internal_bc266790d57edd81c79cda52c3e9e0df427e108fe6324fd3b90a2be35a5f8c61_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "fos_user_content"));
+=======
+        $__internal_ac3924b43e575601e5bcbd41ede880d04f289078b21f3a821b6fa9edf7557c83 = $this->env->getExtension("native_profiler");
+        $__internal_ac3924b43e575601e5bcbd41ede880d04f289078b21f3a821b6fa9edf7557c83->enter($__internal_ac3924b43e575601e5bcbd41ede880d04f289078b21f3a821b6fa9edf7557c83_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "fos_user_content"));
+>>>>>>> david3
 
-        // line 136
+        // line 153
         echo "        ";
         
+<<<<<<< HEAD
         $__internal_bc266790d57edd81c79cda52c3e9e0df427e108fe6324fd3b90a2be35a5f8c61->leave($__internal_bc266790d57edd81c79cda52c3e9e0df427e108fe6324fd3b90a2be35a5f8c61_prof);
+=======
+        $__internal_ac3924b43e575601e5bcbd41ede880d04f289078b21f3a821b6fa9edf7557c83->leave($__internal_ac3924b43e575601e5bcbd41ede880d04f289078b21f3a821b6fa9edf7557c83_prof);
+>>>>>>> david3
 
     }
 
-    // line 161
+    // line 177
     public function block_javascripts1($context, array $blocks = array())
     {
+<<<<<<< HEAD
         $__internal_e11e83917afdaa69a58b4b88dcbba9d2917fe94d68697146dee131a9b543115b = $this->env->getExtension("native_profiler");
         $__internal_e11e83917afdaa69a58b4b88dcbba9d2917fe94d68697146dee131a9b543115b->enter($__internal_e11e83917afdaa69a58b4b88dcbba9d2917fe94d68697146dee131a9b543115b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts1"));
+=======
+        $__internal_e9ce54b0b4c17ca74443c2eb5083602ab2bb3fdd2306f5a94bfaaa338fbd016a = $this->env->getExtension("native_profiler");
+        $__internal_e9ce54b0b4c17ca74443c2eb5083602ab2bb3fdd2306f5a94bfaaa338fbd016a->enter($__internal_e9ce54b0b4c17ca74443c2eb5083602ab2bb3fdd2306f5a94bfaaa338fbd016a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts1"));
+>>>>>>> david3
 
-        // line 162
+        // line 178
         echo "\t\t<script src=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/index/js/jquery.min.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
 \t\t<script src=\"";
-        // line 163
+        // line 179
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/index/js/bootstrap.min.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
 \t\t<script src=\"";
-        // line 164
+        // line 180
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/index/js/scripts.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
 \t\t<script src=\"";
-        // line 165
+        // line 181
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/index/js/polyfills.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
 \t\t<script src=\"";
-        // line 166
+        // line 182
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/index/js/demo1.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
 \t\t";
         
+<<<<<<< HEAD
         $__internal_e11e83917afdaa69a58b4b88dcbba9d2917fe94d68697146dee131a9b543115b->leave($__internal_e11e83917afdaa69a58b4b88dcbba9d2917fe94d68697146dee131a9b543115b_prof);
+=======
+        $__internal_e9ce54b0b4c17ca74443c2eb5083602ab2bb3fdd2306f5a94bfaaa338fbd016a->leave($__internal_e9ce54b0b4c17ca74443c2eb5083602ab2bb3fdd2306f5a94bfaaa338fbd016a_prof);
+>>>>>>> david3
 
     }
 
@@ -331,7 +436,7 @@ class __TwigTemplate_c0f2a2e488b56916f6f0ef4c1fbe69be9dc05100218faced8b8c2e289c9
 
     public function getDebugInfo()
     {
-        return array (  314 => 166,  310 => 165,  306 => 164,  302 => 163,  297 => 162,  291 => 161,  284 => 136,  278 => 135,  268 => 51,  262 => 50,  253 => 48,  249 => 47,  245 => 46,  241 => 45,  236 => 44,  230 => 43,  217 => 168,  215 => 161,  189 => 137,  187 => 135,  164 => 114,  156 => 112,  150 => 109,  146 => 108,  141 => 107,  139 => 106,  132 => 102,  122 => 95,  114 => 90,  75 => 53,  72 => 50,  70 => 43,  26 => 1,);
+        return array (  374 => 182,  370 => 181,  366 => 180,  362 => 179,  357 => 178,  351 => 177,  344 => 153,  338 => 152,  328 => 51,  322 => 50,  313 => 48,  309 => 47,  305 => 46,  301 => 45,  296 => 44,  290 => 43,  277 => 184,  275 => 177,  250 => 154,  248 => 152,  238 => 145,  222 => 131,  219 => 130,  213 => 129,  204 => 126,  199 => 125,  194 => 124,  189 => 123,  187 => 122,  184 => 121,  176 => 119,  168 => 114,  164 => 113,  159 => 111,  155 => 109,  153 => 108,  143 => 101,  131 => 92,  123 => 87,  107 => 74,  103 => 73,  99 => 72,  95 => 71,  75 => 53,  72 => 50,  70 => 43,  26 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -403,16 +508,13 @@ class __TwigTemplate_c0f2a2e488b56916f6f0ef4c1fbe69be9dc05100218faced8b8c2e289c9
 /* 				<!-- Start Nav Structure -->*/
 /* 				<button class="cn-button" id="cn-button">+</button>*/
 /* 				<div class="cn-wrapper" id="cn-wrapper" style="margin-bottom: 10px"> <!-- mover posicion de los botones del menu -->*/
-/* 				    <ul>*/
-/* 				      <li><a href="#"><img src="/my_project/web/bundles/index/imgs/iconsMenu/camada.png" width="45px"></a></li>*/
-/* 				      <li><a href="#"><img src="/my_project/web/bundles/index/imgs/iconsMenu/adoptar.png" width="45px"></indexan></a></li>*/
-/* 				      <li><a href="#"><img src="/my_project/web/bundles/index/imgs/iconsMenu/home.png" width="40px"></a></li>*/
-/* 				      <li><a href="#"><img src="/my_project/web/bundles/index/imgs/iconsMenu/buscar.png" width="30px"></a></li>*/
-/* 				       <li><a href="#"><img src="/my_project/web/bundles/index/imgs/iconsMenu/donar.png" width="45px"></a></li>*/
-/* */
-/* */
-/* */
-/* 				     </ul>*/
+/* 				    	<ul>*/
+/* 					<li><a onclick="location.href='{{ path("paginas_sebusca") }}'" ><img src="/my_project/web/bundles/index/imgs/iconsMenu/buscarperdido.png" width="45px"></a></li>*/
+/* 					<li><a onclick="location.href='{{ path("paginas_adopciones") }}'"><img src="/my_project/web/bundles/index/imgs/iconsMenu/adoptar.png" width="50px"></span></a></li>*/
+/* 					<li><a onclick="location.href='{{ path("paginas_protectoras") }}'"><img src="/my_project/web/bundles/index/imgs/iconsMenu/refugio.png" width="45px"></a></li>*/
+/* 					<li><a onclick="location.href='{{ path("paginas_camadas") }}'"><img src="/my_project/web/bundles/index/imgs/iconsMenu/camada.png" width="45px"></a></li>*/
+/* 					<li><a href="/my_project/phpBB3/"><img src="/my_project/web/bundles/index/imgs/iconsMenu/forum.png" width="45px"></a></li>*/
+/* 				</ul>*/
 /* 				</div>*/
 /* 				<div id="cn-overlay" class="cn-overlay"></div>*/
 /* 				<!-- End Nav Structure -->*/
@@ -422,55 +524,75 @@ class __TwigTemplate_c0f2a2e488b56916f6f0ef4c1fbe69be9dc05100218faced8b8c2e289c9
 /* 	<div class="row">*/
 /* 		<div class="col-md-12">*/
 /* 			<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="height:95px;">*/
-/* 				<div class="navbar-header" ><center>*/
-/* 					<a href="{{ path("ani") }}">*/
-/* 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="border:0;">*/
-/* 						<img src="/my_project/web/bundles/index/imgs/publicar.png" class="visible-xs">*/
+/* 						<div class="navbar-header" >*/
+/* 							<a href="{{ path("ani") }}">*/
+/* 								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="border:0;">*/
+/* 									<img src="/my_project/web/bundles/index/imgs/publicar.png" class="visible-xs">*/
+/* 								</button>*/
+/* 							</a>*/
+/* 							<a class="navbar-brand container-fluid" style="height:100px" href="{{ path("index_homepage") }}"><img src="/my_project/web/bundles/index/imgs/logo.png" width="160px"> </a>*/
+/* 						</div>*/
+/* 						<ul class="nav navbar-nav nav-justified hidden-xs" role="menu">*/
+/* 							<li>*/
+/* 								<!--<button type="submit" class="btn btn-default hidden-xs"  style="border: 0px;border-radius: 27px 27px 27px 27px;*/
+/* 								-moz-border-radius: 27px 27px 27px 27px; -webkit-border-radius: 27px 27px 27px 27px; margin-left:40%; margin-top:-32px;">*/
+/* 								<img src="/my_project/web/bundles/index/imgs/publicar.png" onClick="location.href=''"/>&nbsp;&nbsp;&nbsp;Publicar anuncio*/
+/* 								</button>-->*/
+/* 								<button class="btn btn-default hidden-xs"  style="border: 0px;border-radius: 27px 27px 27px 27px;*/
+/* 								-moz-border-radius: 27px 27px 27px 27px; -webkit-border-radius: 27px 27px 27px 27px; margin-left:40%; margin-top:-130px;" onClick="location.href='{{ path("ani") }}'" value="publicar anuncio">*/
+/* 									<img src="/my_project/web/bundles/index/imgs/publicar.png">&nbsp;&nbsp;&nbsp; Publicar anuncio*/
+/* 								</button>*/
+/* 							</li>*/
+/* 							<div class="navbar-right container-fluid " >*/
+/* 								<div style="background-color:white; padding:5px; margin-right:13px; margin-top:-105px; border: 0px;border-radius: 27px 27px 27px 27px;*/
+/* 								-moz-border-radius: 27px 27px 27px 27px; -webkit-border-radius: 27px 27px 27px 27px;">*/
+/* 									{% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}*/
+/* 										<img src="/my_project/web/bundles/index/imgs/user.png">&nbsp;&nbsp; */
+/* 										<a style="height:-150px;" href="http://pruebaaaspets-daflpa.c9users.io/my_project/web/app_dev.php/profile/">*/
+/* 											{{ 'Perfil'|trans({}, 'FOSUserBundle') }}*/
+/* 										</a> | */
+/* 										<a style="height:-150px;" href="{{ path('fos_user_security_logout') }}">*/
+/* 											{{ 'Cerrar sesión'|trans({}, 'FOSUserBundle') }}*/
+/* 										</a>&nbsp;&nbsp; */
+/* 										<center>*/
+/* 										</center>*/
+/* 									{% else %}*/
+/* 										<a style="height:-150px; text-decoration:none;" href="{{ path('fos_user_security_login') }}"><img src="/my_project/web/bundles/index/imgs/user.png">&nbsp;{{ '   Mi cuenta'|trans({}, 'FOSUserBundle') }}</a>*/
+/* 									{% endif %}*/
+/* 								</div>*/
+/* 								{% if app.request.hasPreviousSession %}*/
+/* 									{% for type, messages in app.session.flashbag.all() %}*/
+/* 										{% for message in messages %}*/
+/* 											<div class="flash-{{ type }}">*/
+/* 												{{ message }}*/
+/* 											</div>*/
+/* 										{% endfor %}*/
+/* 									{% endfor %}*/
+/* 								{% endif %}*/
+/* 							</div>		*/
+/* 						</ul>*/
+/* 						<!--*/
+/* 						<form class="navbar-right" style="margin-top:10px;">*/
+/* 						<a href="publicar.html">*/
+/* 						<button type="submit" class="btn btn-default hidden-xs" style="border: 0px;border-radius: 27px 27px 27px 27px;*/
+/* 						-moz-border-radius: 27px 27px 27px 27px;*/
+/* 						-webkit-border-radius: 27px 27px 27px 27px; margin-right:390px;">*/
+/* 						<img src="imgs/publicar.png"/>&nbsp;&nbsp;&nbsp;Publicar anuncio*/
 /* 						</button>*/
-/* 					</a></center>*/
-/* 					<a class="navbar-brand" href="{{ path("index_homepage") }}"><img src="/my_project/web/bundles/index/imgs/logo.png" width="160px"></a>*/
-/* 				</div>*/
-/* 				<ul class="nav navbar-nav nav-justified hidden-xs" role="menu">*/
-/*  					<li>*/
-/* 							<button type="submit" class="btn btn-default hidden-xs"  style="border: 0px;border-radius: 27px 27px 27px 27px;*/
-/* 							-moz-border-radius: 27px 27px 27px 27px;*/
-/* 							-webkit-border-radius: 27px 27px 27px 27px; margin-top: -55px; margin-left:45%; margin-top:-32px;">*/
-/* 							<img src="/my_project/web/bundles/index/imgs/publicar.png" onClick="{{ path("ani") }}"/>&nbsp;Publicar anuncio*/
-/* 							</button>*/
-/* 				<div class="navbar-right container-fluid " >*/
-/* 						<div style="background-color:white; padding:5px; margin-right:13px; margin-top:-32px; border-radius: 15px;">*/
-/*             {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}*/
-/*                     Estás logueado como: {{ app.user.username }} <br><center>*/
-/*                 <a href="{{ path('fos_user_security_logout') }}">*/
-/*                     {{ 'Salir'|trans({}, 'FOSUserBundle') }}*/
-/*                 </a></center>*/
-/*             {% else %}*/
-/*                 <a href="{{ path('fos_user_security_login') }}">{{ 'Iniciar sesión'|trans({}, 'FOSUserBundle') }}</a>*/
-/*             {% endif %}*/
-/*         </div>*/
-/* */
-/*         </div>	*/
-/*  				</ul>*/
-/* 								<!--*/
-/* 				<form class="navbar-right" style="margin-top:10px;">*/
-/* 					<a href="publicar.html">*/
-/* 							<button type="submit" class="btn btn-default hidden-xs" style="border: 0px;border-radius: 27px 27px 27px 27px;*/
-/* 							-moz-border-radius: 27px 27px 27px 27px;*/
-/* 							-webkit-border-radius: 27px 27px 27px 27px; margin-right:390px;">*/
-/* 							<img src="imgs/publicar.png"/>&nbindex;&nbindex;&nbindex;Publicar anuncio*/
-/* 							</button>*/
 /* 						*/
 /* 						</a>*/
-/* 				</form>-->*/
-/* 		*/
-/* 			</nav>*/
+/* 						</form>-->*/
+/* 						<div class="navbar-right container-fluid" style="margin-top:7px;">*/
+/* 							<img class="visible-xs" src="/my_project/web/bundles/index/imgs/user.png" onclick="location.href='{{ path("fos_user_security_login") }}';" style="float: right; margin-right: 10px"><br>*/
+/* 						</div>*/
+/* 					</nav>*/
 /* 			*/
 /* 			<center>*/
-/* 			<div class="jumbotron" style="margin-top: 120px; margin-bottom: 50px; width:50%; background-color:white;">*/
+/* 			<div class="jumbotron" style="margin-top: 120px; margin-bottom: 50px; width:100%; background-color:white;">*/
 /* 			*/
 /* 				{% block fos_user_content %}*/
 /*         {% endblock fos_user_content %}*/
-/*         */
+/*        */
 /* 			</div>*/
 /* 			</center>*/
 /* 		</div>*/
@@ -479,12 +601,11 @@ class __TwigTemplate_c0f2a2e488b56916f6f0ef4c1fbe69be9dc05100218faced8b8c2e289c9
 /* </div>*/
 /*        */
 /* */
-/* <div id="footer" style="position: fixed; bottom: 0; width: 100%; height: 40px; background-color: #00BCD4;text-align: right; line-height: 40px;">*/
-/*       <div class="container" >*/
-/*         <p class="text-muted credit" ><font color="#FFFFFF">Pet's | Copyright © 2016 - 2017</font></p>*/
-/* */
-/*       </div>*/
-/*     </div>*/
+/* <div id="footer" style="position: fixed; bottom: 0; width: 100%; height: 50px; background-color: #00BCD4;text-align: right; line-height: 40px;">*/
+/*             <div class="container" >*/
+/*                 <p class="text-muted credit" ><font color="#FFFFFF">Pet's | Copyright © 2016</font></p>*/
+/*             </div>*/
+/*             </div>*/
 /* */
 /* */
 /*     <!--<script src="js/jquery.min.js"></script>*/

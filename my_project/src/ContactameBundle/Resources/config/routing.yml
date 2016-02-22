@@ -1,0 +1,3 @@
+contactame_homepage:
+    path:     /contactame
+    defaults: { _controller: ContactameBundle:Default:index }

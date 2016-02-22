@@ -12,6 +12,14 @@ use Doctrine\Common\Collections\ArrayCollection;
  */
 class User extends BaseUser
 {
+    
+    /**
+     * Relationship OneToMany
+     * 
+     * @ORM\OneToMany(targetEntity="AnunciosBundle\Entity\Anuncios", mappedBy="user",cascade={"persist", "remove"})
+     */
+     protected $anuncios;
+    
     /**
      * @ORM\OneToMany(targetEntity="AnunciosBundle\Entity\Anuncios", mappedBy="usuario")
      */
@@ -29,11 +37,19 @@ class User extends BaseUser
         parent::__construct();
         $this->anuncios = new ArrayCollection();
     }
+<<<<<<< HEAD
+=======
+    
+>>>>>>> david3
 
     /**
      * Add anuncio
      *
+<<<<<<< HEAD
      * @param \AnunciosBundle\Entity\Anuncios $anuncio
+=======
+     * @param \AnunciosBundle\Anuncios $anuncio
+>>>>>>> david3
      *
      * @return User
      */
@@ -47,7 +63,11 @@ class User extends BaseUser
     /**
      * Remove anuncio
      *
+<<<<<<< HEAD
      * @param \AnunciosBundle\Entity\Anuncios $anuncio
+=======
+     * @param \AnunciosBundle\Anuncios $anuncio
+>>>>>>> david3
      */
     public function removeAnuncio(\AnunciosBundle\Entity\Anuncios $anuncio)
     {
@@ -63,4 +83,9 @@ class User extends BaseUser
     {
         return $this->anuncios;
     }
+<<<<<<< HEAD
+=======
+    
+  
+>>>>>>> david3
 }

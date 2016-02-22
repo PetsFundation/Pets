@@ -20,6 +20,18 @@ class Anuncios
     protected $usuario;
     
     /**
+     * Relationship OneToOne
+     * 
+     * @ORM\OneToOne(targetEntity="AnimalesBundle\Entity\Animales", inversedBy="anuncio",cascade={"persist", "remove"})
+     */
+     protected $animal;
+     
+    /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\User", inversedBy="anuncios")
+     * @ORM\JoinColumn(name="anuncio_id", referencedColumnName="id",onDelete="CASCADE")
+     */
+    protected $user;
+    /**
      * @var int
      *
      * @ORM\Column(name="id", type="integer")
@@ -38,16 +50,10 @@ class Anuncios
     /**
      * @var string
      *
-     * @ORM\Column(name="Categoria", type="string", columnDefinition="enum('Camadas', 'Adopción', 'Se busca', 'Protectoras')")
+     * @ORM\Column(name="Categoria", type="string", columnDefinition="enum('Camadas', 'Adopciones', 'Se busca', 'Protectoras')")
      */
     private $categoria;
 
-    /**
-     * @var int
-     *
-     * @ORM\Column(name="IdAnimal", type="integer", unique=true)
-     */
-    private $idAnimal;
 
 
     /**
@@ -84,29 +90,6 @@ class Anuncios
         return $this->titulo;
     }
 
-    /**
-     * Set idAnimal
-     *
-     * @param integer $idAnimal
-     *
-     * @return Anuncios
-     */
-    public function setIdAnimal($idAnimal)
-    {
-        $this->idAnimal = $idAnimal;
-
-        return $this;
-    }
-
-    /**
-     * Get idAnimal
-     *
-     * @return int
-     */
-    public function getIdAnimal()
-    {
-        return $this->idAnimal;
-    }
 
 
     /**
@@ -133,6 +116,7 @@ class Anuncios
         return $this->categoria;
     }
 
+<<<<<<< HEAD
   
 
     /**
@@ -145,17 +129,71 @@ class Anuncios
     public function setUsuario(\AppBundle\Entity\User $usuario = null)
     {
         $this->usuario = $usuario;
+=======
+   
+   
+
+    /**
+     * Set user
+     *
+     * @param \AppBundle\Entity\User $user
+     *
+     * @return Anuncios
+     */
+    public function setUser(\AppBundle\Entity\User $user = null)
+    {
+        $this->user = $user;
 
         return $this;
     }
 
     /**
-     * Get usuario
+     * Get user
      *
      * @return \AppBundle\Entity\User
      */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * Set animal
+     *
+     * @param \AnimalesBundle\Entity\Animales $animal
+     *
+     * @return Anuncios
+     */
+    public function setAnimal(\AnimalesBundle\Entity\Animales $animal = null)
+    {
+        $this->animal = $animal;
+>>>>>>> david3
+
+        return $this;
+    }
+
+    /**
+<<<<<<< HEAD
+     * Get usuario
+=======
+     * Get animal
+>>>>>>> david3
+     *
+     * @return \AppBundle\Entity\User
+     */
+<<<<<<< HEAD
     public function getUsuario()
     {
         return $this->usuario;
+=======
+    public function getAnimal()
+    {
+        return $this->animal;
+>>>>>>> david3
     }
+    
+          public function __toString()
+{
+    return (string) $this->getAnimal();
+} 
 }

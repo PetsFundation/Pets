@@ -21,20 +21,34 @@ class __TwigTemplate_5d0e7927ea47dfd58f053e383973899d5165914460a87e057782557aba1
 
     protected function doDisplay(array $context, array $blocks = array())
     {
+<<<<<<< HEAD
         $__internal_b2bb53d383f6a1e291bac26c51af0af62b3262a1c85877677f14ffb214a07f6d = $this->env->getExtension("native_profiler");
         $__internal_b2bb53d383f6a1e291bac26c51af0af62b3262a1c85877677f14ffb214a07f6d->enter($__internal_b2bb53d383f6a1e291bac26c51af0af62b3262a1c85877677f14ffb214a07f6d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "animales/new.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
         $__internal_b2bb53d383f6a1e291bac26c51af0af62b3262a1c85877677f14ffb214a07f6d->leave($__internal_b2bb53d383f6a1e291bac26c51af0af62b3262a1c85877677f14ffb214a07f6d_prof);
+=======
+        $__internal_de04cb6f09489f1481888941fcf184c896f04e5b01675be8d71a4d30e8960d5d = $this->env->getExtension("native_profiler");
+        $__internal_de04cb6f09489f1481888941fcf184c896f04e5b01675be8d71a4d30e8960d5d->enter($__internal_de04cb6f09489f1481888941fcf184c896f04e5b01675be8d71a4d30e8960d5d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "animales/new.html.twig"));
+
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
+        
+        $__internal_de04cb6f09489f1481888941fcf184c896f04e5b01675be8d71a4d30e8960d5d->leave($__internal_de04cb6f09489f1481888941fcf184c896f04e5b01675be8d71a4d30e8960d5d_prof);
+>>>>>>> david3
 
     }
 
     // line 2
     public function block_body($context, array $blocks = array())
     {
+<<<<<<< HEAD
         $__internal_26b50836257cb117068e3638cfd7a2de5a734c46030d55c97974494f852e7f6c = $this->env->getExtension("native_profiler");
         $__internal_26b50836257cb117068e3638cfd7a2de5a734c46030d55c97974494f852e7f6c->enter($__internal_26b50836257cb117068e3638cfd7a2de5a734c46030d55c97974494f852e7f6c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+=======
+        $__internal_f688422c6714b5dda7967de8a471981fc3d60d560af63a24a1736b28097e4d69 = $this->env->getExtension("native_profiler");
+        $__internal_f688422c6714b5dda7967de8a471981fc3d60d560af63a24a1736b28097e4d69->enter($__internal_f688422c6714b5dda7967de8a471981fc3d60d560af63a24a1736b28097e4d69_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+>>>>>>> david3
 
         // line 3
         echo " <script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js\" type=\"text/javascript\" language=\"javascript\"></script>
@@ -49,10 +63,11 @@ class __TwigTemplate_5d0e7927ea47dfd58f053e383973899d5165914460a87e057782557aba1
         // line 11
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_start');
         echo "
-         <div class=\"jumbotron\" style=\"margin-top: -70px; margin-bottom: 50px; width:100%; padding-top: 40px; background-color: white\">
+         <div class=\"jumbotron\" style=\"margin-top: -50px; margin-bottom: 50px; width:100%; padding-top: 40px; background-color: white\">
              
               <div class=\"row\">
                   <div class=\"col-sm-6 col-md-offset-3\" align=\"left\">
+                    <!--Esto debe conectar con anuncios-->
                   <font style=\"color: #00BCD4;font-weight: bold; font-size:23px;\">¿En qué categoria va tu anuncio?</font>
                   <select name=\"url\" class=\"form-control\">
                            <option value=\"0\">Elija la categoria del anuncio</option>
@@ -67,9 +82,15 @@ class __TwigTemplate_5d0e7927ea47dfd58f053e383973899d5165914460a87e057782557aba1
                <div class=\"row\">
                   <div class=\"col-sm-6 col-md-offset-3\" align=\"left\"><br>
                   <font style=\"color: #00BCD4;font-weight: bold; font-size:23px;\">Detalles de tu anuncio</font><br><br>
+                  <!--Esto debe conectar con anuncios-->
                  <b>Titulo del anuncio: </b><input type=\"text\" class=\"form-control\" placeholder='...'>
-      
-                    <textarea class=\"form-control\" rows=\"6\" placeholder=\"Escribe el texto del anuncio\" style=\"height:200px\"></textarea>
+                 ";
+        // line 33
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "descripcion", array()), 'row', array("attr" => array("class" => "form-control")));
+        echo "<br>
+                      <!--Esto debe conectar con anuncios-->
+                      
+                    <!-- <textarea class=\"form-control\" rows=\"6\" placeholder=\"Escribe el texto del anuncio\" style=\"height:200px\"></textarea>!-->
                   </div>
               </div>
                <br>
@@ -77,33 +98,33 @@ class __TwigTemplate_5d0e7927ea47dfd58f053e383973899d5165914460a87e057782557aba1
                     <div class=\"col-sm-6 col-md-offset-3\" align=\"left\"><br>
                     <font style=\"color: #00BCD4;font-weight: bold; font-size:23px;\">Datos del animal</font><br><br>
                  ";
-        // line 39
+        // line 43
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "nombre", array()), 'row');
         echo "<br>
                  ";
-        // line 40
+        // line 44
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "raza", array()), 'row');
         echo "<br>
                  ";
-        // line 41
+        // line 45
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "tipo", array()), 'row');
         echo "<br> 
                  ";
-        // line 42
+        // line 46
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "sexo", array()), 'row');
         echo "<br>
                  ";
-        // line 43
+        // line 47
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "nacimiento", array()), 'row');
         echo "<br>
                  ";
-        // line 44
+        // line 48
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "pedigri", array()), 'row');
         echo "<br>
-                
-                
+                 
+                <!--Esto debe conectar con propietario-->
                 ";
-        // line 47
+        // line 51
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "propietario", array()), 'row');
         echo "<br>
                     </div>
@@ -127,21 +148,25 @@ class __TwigTemplate_5d0e7927ea47dfd58f053e383973899d5165914460a87e057782557aba1
                  </div>
              </div>
     ";
-        // line 68
+        // line 72
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_end');
         echo "
     
     <ul>
         <li>
             <a href=\"";
-        // line 72
+        // line 76
         echo $this->env->getExtension('routing')->getPath("animales_index");
         echo "\" hidden>Volver a la lista</a>
         </li>
     </ul>
 ";
         
+<<<<<<< HEAD
         $__internal_26b50836257cb117068e3638cfd7a2de5a734c46030d55c97974494f852e7f6c->leave($__internal_26b50836257cb117068e3638cfd7a2de5a734c46030d55c97974494f852e7f6c_prof);
+=======
+        $__internal_f688422c6714b5dda7967de8a471981fc3d60d560af63a24a1736b28097e4d69->leave($__internal_f688422c6714b5dda7967de8a471981fc3d60d560af63a24a1736b28097e4d69_prof);
+>>>>>>> david3
 
     }
 
@@ -157,7 +182,7 @@ class __TwigTemplate_5d0e7927ea47dfd58f053e383973899d5165914460a87e057782557aba1
 
     public function getDebugInfo()
     {
-        return array (  138 => 72,  131 => 68,  107 => 47,  101 => 44,  97 => 43,  93 => 42,  89 => 41,  85 => 40,  81 => 39,  50 => 11,  40 => 3,  34 => 2,  11 => 1,);
+        return array (  145 => 76,  138 => 72,  114 => 51,  108 => 48,  104 => 47,  100 => 46,  96 => 45,  92 => 44,  88 => 43,  75 => 33,  50 => 11,  40 => 3,  34 => 2,  11 => 1,);
     }
 }
 /* {% extends 'base.html.twig' %}*/
@@ -171,10 +196,11 @@ class __TwigTemplate_5d0e7927ea47dfd58f053e383973899d5165914460a87e057782557aba1
 /*         <script src="../../bundles/animales/js/fileinput_locale_fr.js" type="text/javascript"></script>*/
 /*         <script src="../../bundles/animales/js/fileinput_locale_es.js" type="text/javascript"></script>*/
 /*     {{ form_start(form) }}*/
-/*          <div class="jumbotron" style="margin-top: -70px; margin-bottom: 50px; width:100%; padding-top: 40px; background-color: white">*/
+/*          <div class="jumbotron" style="margin-top: -50px; margin-bottom: 50px; width:100%; padding-top: 40px; background-color: white">*/
 /*              */
 /*               <div class="row">*/
 /*                   <div class="col-sm-6 col-md-offset-3" align="left">*/
+/*                     <!--Esto debe conectar con anuncios-->*/
 /*                   <font style="color: #00BCD4;font-weight: bold; font-size:23px;">¿En qué categoria va tu anuncio?</font>*/
 /*                   <select name="url" class="form-control">*/
 /*                            <option value="0">Elija la categoria del anuncio</option>*/
@@ -189,9 +215,12 @@ class __TwigTemplate_5d0e7927ea47dfd58f053e383973899d5165914460a87e057782557aba1
 /*                <div class="row">*/
 /*                   <div class="col-sm-6 col-md-offset-3" align="left"><br>*/
 /*                   <font style="color: #00BCD4;font-weight: bold; font-size:23px;">Detalles de tu anuncio</font><br><br>*/
+/*                   <!--Esto debe conectar con anuncios-->*/
 /*                  <b>Titulo del anuncio: </b><input type="text" class="form-control" placeholder='...'>*/
-/*       */
-/*                     <textarea class="form-control" rows="6" placeholder="Escribe el texto del anuncio" style="height:200px"></textarea>*/
+/*                  {{form_row(form.descripcion, { 'attr': {'class': 'form-control'} }) }}<br>*/
+/*                       <!--Esto debe conectar con anuncios-->*/
+/*                       */
+/*                     <!-- <textarea class="form-control" rows="6" placeholder="Escribe el texto del anuncio" style="height:200px"></textarea>!-->*/
 /*                   </div>*/
 /*               </div>*/
 /*                <br>*/
@@ -204,8 +233,8 @@ class __TwigTemplate_5d0e7927ea47dfd58f053e383973899d5165914460a87e057782557aba1
 /*                  {{form_row(form.sexo) }}<br>*/
 /*                  {{form_row(form.nacimiento) }}<br>*/
 /*                  {{form_row(form.pedigri) }}<br>*/
-/*                 */
-/*                 */
+/*                  */
+/*                 <!--Esto debe conectar con propietario-->*/
 /*                 {{form_row(form.propietario) }}<br>*/
 /*                     </div>*/
 /*                </div>*/

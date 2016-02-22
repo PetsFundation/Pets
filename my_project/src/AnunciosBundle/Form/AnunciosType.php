@@ -5,6 +5,13 @@ namespace AnunciosBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+<<<<<<< HEAD
+=======
+use AnimalesBundle\Form\AnimalesType;
+use Symfony\Component\Form\Extension\Core\Type;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+
+>>>>>>> david3
 
 class AnunciosType extends AbstractType
 {
@@ -14,6 +21,7 @@ class AnunciosType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
+<<<<<<< HEAD
         $builder
             ->add('titulo')
             ->add('categoria')
@@ -21,6 +29,27 @@ class AnunciosType extends AbstractType
             ->add('usuario')
             
         ;
+=======
+         $builder->add('categoria', 'choice',array(
+                'choices'=>array(
+                    'Camadas' =>'Camadas',
+                    'Adopciones' =>'Adopciones',
+                    'Se busca' =>'Se busca',
+                     'Protectoras' =>'Protectoras'
+                    
+                    ),
+                    ));
+        $builder
+            ->add('titulo')
+            
+            ->add('animal')
+           # ->add('user')
+        ;
+       
+        $builder->add('animal', AnimalesType::class,array('by_reference'   => false));
+        
+         
+>>>>>>> david3
     }
     
     /**

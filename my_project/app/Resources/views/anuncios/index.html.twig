@@ -3,12 +3,20 @@
 {% block body %}
     <h1>Anuncios list</h1>
 
+<<<<<<< HEAD
     <table>
+=======
+    <table class="table">
+>>>>>>> david3
         <thead>
             <tr>
                 <th>Id</th>
                 <th>Titulo</th>
                 <th>Categoria</th>
+<<<<<<< HEAD
+=======
+                <th>Idpropietario</th>
+>>>>>>> david3
                 <th>Idanimal</th>
                 <th>Actions</th>
             </tr>
@@ -19,7 +27,14 @@
                 <td><a href="{{ path('anuncios_show', { 'id': anuncio.id }) }}">{{ anuncio.id }}</a></td>
                 <td>{{ anuncio.titulo }}</td>
                 <td>{{ anuncio.categoria }}</td>
+<<<<<<< HEAD
                 <td>{{ anuncio.idAnimal }}</td>
+=======
+                <td>{{ anuncio.user }}</td>
+                <td>{{ anuncio.animal.id }}</td>
+                <td></td>
+                
+>>>>>>> david3
                 <td>
                     <ul>
                         <li>

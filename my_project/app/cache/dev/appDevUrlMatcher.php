@@ -105,9 +105,39 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
+        // contactame_homepage
+        if ($pathinfo === '/contactame') {
+            return array (  '_controller' => 'ContactameBundle\\Controller\\DefaultController::indexAction',  '_route' => 'contactame_homepage',);
+        }
+
+        // donaciones_homepage
+        if ($pathinfo === '/donaciones') {
+            return array (  '_controller' => 'DonacionesBundle\\Controller\\DefaultController::indexAction',  '_route' => 'donaciones_homepage',);
+        }
+
         // paginas_index_homepage
         if ($pathinfo === '/paginas') {
             return array (  '_controller' => 'PaginasIndexBundle\\Controller\\DefaultController::indexAction',  '_route' => 'paginas_index_homepage',);
+        }
+
+        // paginas_camadas
+        if ($pathinfo === '/camadas') {
+            return array (  '_controller' => 'PaginasIndexBundle\\Controller\\DefaultController::camadasAction',  '_route' => 'paginas_camadas',);
+        }
+
+        // paginas_adopciones
+        if ($pathinfo === '/adopciones') {
+            return array (  '_controller' => 'PaginasIndexBundle\\Controller\\DefaultController::adopcionesAction',  '_route' => 'paginas_adopciones',);
+        }
+
+        // paginas_protectoras
+        if ($pathinfo === '/protectoras') {
+            return array (  '_controller' => 'PaginasIndexBundle\\Controller\\DefaultController::protectorasAction',  '_route' => 'paginas_protectoras',);
+        }
+
+        // paginas_sebusca
+        if ($pathinfo === '/sebusca') {
+            return array (  '_controller' => 'PaginasIndexBundle\\Controller\\DefaultController::sebuscaAction',  '_route' => 'paginas_sebusca',);
         }
 
         // index_homepage
@@ -126,6 +156,14 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             }
 
             if (0 === strpos($pathinfo, '/anuncios')) {
+<<<<<<< HEAD
+=======
+                // anunc
+                if ($pathinfo === '/anuncios/new') {
+                    return array (  '_controller' => 'AnunciosBundle\\Controller\\AnunciosController::newAction',  '_route' => 'anunc',);
+                }
+
+>>>>>>> david3
                 // anuncios_index
                 if (rtrim($pathinfo, '/') === '/anuncios') {
                     if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
@@ -185,10 +223,16 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 }
                 not_anuncios_delete:
 
+<<<<<<< HEAD
                 // anuncios_homepage
                 if ($pathinfo === '/anuncios') {
                     return array (  '_controller' => 'AnunciosBundle\\Controller\\DefaultController::indexAction',  '_route' => 'anuncios_homepage',);
                 }
+=======
+            }
+
+        }
+>>>>>>> david3
 
             }
 

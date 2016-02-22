@@ -7,6 +7,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 use AnimalesBundle\Entity\Animales;
 use AnimalesBundle\Form\AnimalesType;
+use AnunciosBundle\Entity\Anuncios;
+use AnunciosBundle\Form\AnunciosType;
 
 /**
  * Animales controller.
@@ -78,9 +80,15 @@ class AnimalesController extends Controller
         $editForm->handleRequest($request);
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
-            $em = $this->getDoctrine()->getManager();
+           $em = $this->getDoctrine()->getManager();
             $em->persist($animale);
             $em->flush();
+    # $stmt = $this->getDoctrine()->getEntityManager()
+   #->getConnection()
+    #->prepare("UPDATE  symfony.anuncios SET  `Categoria` =  '', WHERE  `anuncios`.`id` =".$animale->getId());
+#$stmt->execute();
+    
+    
 
             return $this->redirectToRoute('animales_edit', array('id' => $animale->getId()));
         }

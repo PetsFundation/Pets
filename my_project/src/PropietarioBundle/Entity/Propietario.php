@@ -282,6 +282,7 @@ class Propietario
         return $this->animal;
     }
     
+<<<<<<< HEAD
     /**
      * Relationship OneToMany
      * 
@@ -289,4 +290,7 @@ class Propietario
      */
      private $propietarioAnimal;
      
+=======
+   
+>>>>>>> david3
 }

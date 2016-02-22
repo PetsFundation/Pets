@@ -12,6 +12,13 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Animales
 {
+    
+    /**
+     * @ORM\OneToOne(targetEntity="AnunciosBundle\Entity\Anuncios", mappedBy="animal",cascade={"persist", "remove"})
+     * @ORM\JoinColumn(name="anuncio_id", referencedColumnName="id",onDelete="CASCADE")
+     */
+    protected $anuncio;
+    
     /**
      * @var int
      *
@@ -70,6 +77,32 @@ class Animales
      * @ORM\Column(name="Pedigri", type="boolean", nullable=true)
      */
     private $pedigri;
+    
+    
+    /**
+    * @var blob
+    *
+    *@ORM\Column(name="img",type="blob", nullable=true)
+    */
+    private $img;
+    
+    
+    /**
+     * @var string
+     *
+     *@ORM\Column(name="descripcion", type="string", length=255)
+     */
+    private $descripcion;
+    
+
+    /**
+     * @var integer
+     *
+     *@ORM\Column(name="tlf",type="integer",length=9) 
+     */
+     
+    private $tlf;
+
 
     /**
      * Get id
@@ -263,6 +296,107 @@ class Animales
         return $this->pedigri;
     }
      
+<<<<<<< HEAD
      
     
+=======
+
+
+    /**
+     * Set anuncio
+     *
+     * @param \AnunciosBundle\Entity\Anuncios $anuncio
+     *
+     * @return Animales
+     */
+    public function setAnuncio(\AnunciosBundle\Entity\Anuncios $anuncio = null)
+    {
+        $this->anuncio = $anuncio;
+
+        return $this;
+    }
+
+    /**
+     * Get anuncio
+     *
+     * @return \AnunciosBundle\Entity\Anuncios
+     */
+    public function getAnuncio()
+    {
+        return $this->anuncio;
+    }
+ 
+
+    /**
+     * Set img
+     *
+     * @param string $img
+     *
+     * @return Animales
+     */
+    public function setImg($img)
+    {
+        $this->img = $img;
+
+        return $this;
+    }
+
+    /**
+     * Get img
+     *
+     * @return string
+     */
+    public function getImg()
+    {
+        return $this->img;
+    }
+
+    /**
+     * Set descripcion
+     *
+     * @param string $descripcion
+     *
+     * @return Animales
+     */
+    public function setDescripcion($descripcion)
+    {
+        $this->descripcion = $descripcion;
+
+        return $this;
+    }
+
+    /**
+     * Get descripcion
+     *
+     * @return string
+     */
+    public function getDescripcion()
+    {
+        return $this->descripcion;
+    }
+
+    /**
+     * Set tlf
+     *
+     * @param integer $tlf
+     *
+     * @return Animales
+     */
+    public function setTlf($tlf)
+    {
+        $this->tlf = $tlf;
+
+        return $this;
+    }
+
+    /**
+     * Get tlf
+     *
+     * @return integer
+     */
+    public function getTlf()
+    {
+        return $this->tlf;
+    }
+>>>>>>> david3
 }

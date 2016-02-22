@@ -4,7 +4,7 @@
  
          
       <div class="row">
-          <div class="col-sm-8 col-md-offset-2" align="left">
+          <div class="col-sm-6 col-md-offset-3" align="left">
              <font style="color: #00BCD4;font-weight: bold; font-size:23px;">Registrarse</font><br><br>
                        
            <label>Nombre de usuario</label> 
@@ -33,6 +33,7 @@
       
          
         {% if is_granted('ROLE_ADMIN') %}
+        <center>
         <div class="form-group">
           <label class="control-label col-sm-2" for="password">Rol:</label>
           <br>
@@ -41,14 +42,22 @@
                 <option value="ROLE_SUPERADMIN" >SUPERADMINISTRADOR</option>
                 <option value="ROLE_USER"  selected="selected">USUARIO</option>
             </select>
+            
         </div>
+        </center>
         {% else %}
+<<<<<<< HEAD
           <div class="col-sm-10"> 
             <select style="" id="fos_user_registration_form_roles" name="fos_user_registration_form[roles][]" required="required" multiple="multiple">
                 <option value="ROLE_ADMIN" >ADMINISTRADOR</option>
                 <option value="ROLE_SUPERADMIN" >SUPERADMINISTRADOR</option>
                 <option value="ROLE_USER"  selected="selected">USUARIO</option>
             </select>
+=======
+          <div class="col-sm-10">
+              {{ form_row(form.roles) }}
+            
+>>>>>>> david3
           </div>
       
       {% endif %}

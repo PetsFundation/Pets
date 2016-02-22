@@ -21,20 +21,20 @@ class __TwigTemplate_8dc4f5c5d4620b8bc88cabcb1510ad9b515ac8c149e056e7214f92fdd92
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_f411d547a050dbe120a4c4bc38c28496a8bcf0fd99438995e0fbc7d17a7355f9 = $this->env->getExtension("native_profiler");
-        $__internal_f411d547a050dbe120a4c4bc38c28496a8bcf0fd99438995e0fbc7d17a7355f9->enter($__internal_f411d547a050dbe120a4c4bc38c28496a8bcf0fd99438995e0fbc7d17a7355f9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FOSUserBundle:Security:login.html.twig"));
+        $__internal_6d73710b7c556296c5275e5a0110dad02d6f90da9601150630d52cc15a16f9b3 = $this->env->getExtension("native_profiler");
+        $__internal_6d73710b7c556296c5275e5a0110dad02d6f90da9601150630d52cc15a16f9b3->enter($__internal_6d73710b7c556296c5275e5a0110dad02d6f90da9601150630d52cc15a16f9b3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FOSUserBundle:Security:login.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_f411d547a050dbe120a4c4bc38c28496a8bcf0fd99438995e0fbc7d17a7355f9->leave($__internal_f411d547a050dbe120a4c4bc38c28496a8bcf0fd99438995e0fbc7d17a7355f9_prof);
+        $__internal_6d73710b7c556296c5275e5a0110dad02d6f90da9601150630d52cc15a16f9b3->leave($__internal_6d73710b7c556296c5275e5a0110dad02d6f90da9601150630d52cc15a16f9b3_prof);
 
     }
 
     // line 5
     public function block_fos_user_content($context, array $blocks = array())
     {
-        $__internal_6d6ae14e981ed86d6c4684b7b9ed4052d5a1bcc1550878ce0a6dfa3fb7c1dc45 = $this->env->getExtension("native_profiler");
-        $__internal_6d6ae14e981ed86d6c4684b7b9ed4052d5a1bcc1550878ce0a6dfa3fb7c1dc45->enter($__internal_6d6ae14e981ed86d6c4684b7b9ed4052d5a1bcc1550878ce0a6dfa3fb7c1dc45_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "fos_user_content"));
+        $__internal_4d13c61825cbe3e107967a67d472e3b98277288ca48e0d3bc9f26c8aae98fbca = $this->env->getExtension("native_profiler");
+        $__internal_4d13c61825cbe3e107967a67d472e3b98277288ca48e0d3bc9f26c8aae98fbca->enter($__internal_4d13c61825cbe3e107967a67d472e3b98277288ca48e0d3bc9f26c8aae98fbca_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "fos_user_content"));
 
         // line 6
         if ((isset($context["error"]) ? $context["error"] : $this->getContext($context, "error"))) {
@@ -50,8 +50,8 @@ class __TwigTemplate_8dc4f5c5d4620b8bc88cabcb1510ad9b515ac8c149e056e7214f92fdd92
             
             
         <div class=\"row\">
-            <div class=\"col-sm-8 col-md-offset-2\" align=\"left\">
-               <font style=\"color: #00BCD4;font-weight: bold; font-size:23px;\">Inicio de sesión</font><br><br>
+            <div class=\"col-sm-4 col-md-offset-4\" align=\"left\">
+               <font style=\"color: #00BCD4;font-weight: bold; font-size:23px;\">Inicio de sesión </font><br><br>
                  
                  
                  <form action=\"";
@@ -93,23 +93,30 @@ class __TwigTemplate_8dc4f5c5d4620b8bc88cabcb1510ad9b515ac8c149e056e7214f92fdd92
   transform: scale(1.5);
 
   /* Webkit browsers*/
-  -webkit-transform: scale(1.4);\"/>
+  -webkit-transform: scale(1.4);\"/>  
  <br><br>
 <input id=\"botonPublicar\" class=\"btn btn-info\" type=\"submit\" id=\"_submit\" name=\"_submit\" value=\"";
         // line 41
         echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("Iniciar sesión", array(), "FOSUserBundle"), "html", null, true);
         echo "\" style='width:100%; height:40px; font-size:20px' />
             
-</form>
-                 
+</form><br><br><br><br>
+               <font style=\"color: #00BCD4;font-weight: bold; font-size:23px;\">¿Aún no te has registrado?</font><br><br>  
+                Registrarse es gratis y lo será siempre<br><br>
+               <input id=\"botonPublicar\" class=\"btn btn-info\" onclick=\"location.href='";
+        // line 46
+        echo $this->env->getExtension('routing')->getPath("fos_user_registration_register");
+        echo "';\"  name=\"_submit\" value=\"";
+        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("Registrarse", array(), "FOSUserBundle"), "html", null, true);
+        echo "\" style='width:100%; height:40px; font-size:20px' />
                  
             </div>
         </div>
-
+<br><br><br><br><br>
 
 ";
         
-        $__internal_6d6ae14e981ed86d6c4684b7b9ed4052d5a1bcc1550878ce0a6dfa3fb7c1dc45->leave($__internal_6d6ae14e981ed86d6c4684b7b9ed4052d5a1bcc1550878ce0a6dfa3fb7c1dc45_prof);
+        $__internal_4d13c61825cbe3e107967a67d472e3b98277288ca48e0d3bc9f26c8aae98fbca->leave($__internal_4d13c61825cbe3e107967a67d472e3b98277288ca48e0d3bc9f26c8aae98fbca_prof);
 
     }
 
@@ -125,7 +132,7 @@ class __TwigTemplate_8dc4f5c5d4620b8bc88cabcb1510ad9b515ac8c149e056e7214f92fdd92
 
     public function getDebugInfo()
     {
-        return array (  100 => 41,  90 => 34,  81 => 28,  74 => 24,  69 => 22,  64 => 20,  59 => 18,  48 => 9,  42 => 7,  40 => 6,  34 => 5,  11 => 1,);
+        return array (  108 => 46,  100 => 41,  90 => 34,  81 => 28,  74 => 24,  69 => 22,  64 => 20,  59 => 18,  48 => 9,  42 => 7,  40 => 6,  34 => 5,  11 => 1,);
     }
 }
 /* {% extends "FOSUserBundle::layout.html.twig" %}*/
@@ -141,8 +148,8 @@ class __TwigTemplate_8dc4f5c5d4620b8bc88cabcb1510ad9b515ac8c149e056e7214f92fdd92
 /*             */
 /*             */
 /*         <div class="row">*/
-/*             <div class="col-sm-8 col-md-offset-2" align="left">*/
-/*                <font style="color: #00BCD4;font-weight: bold; font-size:23px;">Inicio de sesión</font><br><br>*/
+/*             <div class="col-sm-4 col-md-offset-4" align="left">*/
+/*                <font style="color: #00BCD4;font-weight: bold; font-size:23px;">Inicio de sesión </font><br><br>*/
 /*                  */
 /*                  */
 /*                  <form action="{{ path("fos_user_security_check") }}" method="post">*/
@@ -166,16 +173,18 @@ class __TwigTemplate_8dc4f5c5d4620b8bc88cabcb1510ad9b515ac8c149e056e7214f92fdd92
 /*   transform: scale(1.5);*/
 /* */
 /*   /* Webkit browsers*//* */
-/*   -webkit-transform: scale(1.4);"/>*/
+/*   -webkit-transform: scale(1.4);"/>  */
 /*  <br><br>*/
 /* <input id="botonPublicar" class="btn btn-info" type="submit" id="_submit" name="_submit" value="{{ 'Iniciar sesión'|trans }}" style='width:100%; height:40px; font-size:20px' />*/
 /*             */
-/* </form>*/
-/*                  */
+/* </form><br><br><br><br>*/
+/*                <font style="color: #00BCD4;font-weight: bold; font-size:23px;">¿Aún no te has registrado?</font><br><br>  */
+/*                 Registrarse es gratis y lo será siempre<br><br>*/
+/*                <input id="botonPublicar" class="btn btn-info" onclick="location.href='{{ path("fos_user_registration_register") }}';"  name="_submit" value="{{ 'Registrarse'|trans }}" style='width:100%; height:40px; font-size:20px' />*/
 /*                  */
 /*             </div>*/
 /*         </div>*/
-/* */
+/* <br><br><br><br><br>*/
 /* */
 /* {% endblock fos_user_content %}*/
 /* */

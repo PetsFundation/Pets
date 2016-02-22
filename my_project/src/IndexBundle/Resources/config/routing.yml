@@ -5,3 +5,7 @@ index_homepage:
 ani:
     path:     /animales/new
     defaults: { _controller: AnimalesBundle:Animales:new }
+
+anunc:
+    path:     /anuncios/new
+    defaults: { _controller: AnunciosBundle:Anuncios:new }

@@ -7,6 +7,8 @@ imports:
     - { resource: "@AnunciosBundle/Resources/config/services.yml" }
     - { resource: "@IndexBundle/Resources/config/services.yml" }
     - { resource: "@PaginasIndexBundle/Resources/config/services.yml" }
+    - { resource: "@DonacionesBundle/Resources/config/services.yml" }
+    - { resource: "@ContactameBundle/Resources/config/services.yml" }
 
 
 # Put parameters here that don't need to change on each machine where the app is deployed

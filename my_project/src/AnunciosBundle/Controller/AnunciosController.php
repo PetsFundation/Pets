@@ -7,6 +7,11 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 use AnunciosBundle\Entity\Anuncios;
 use AnunciosBundle\Form\AnunciosType;
+<<<<<<< HEAD
+=======
+use AnimalesBundle\Entity\Animales;
+use AppBundle\Entity\User;
+>>>>>>> david3
 
 /**
  * Anuncios controller.
@@ -36,6 +41,15 @@ class AnunciosController extends Controller
     public function newAction(Request $request)
     {
         $anuncio = new Anuncios();
+<<<<<<< HEAD
+=======
+        $animal = new Animales();
+        $user = new User();
+        
+       $anuncio->setUser($this->getUser());
+        $animal->setAnuncio($anuncio);
+        $anuncio->setAnimal($animal);
+>>>>>>> david3
         $form = $this->createForm('AnunciosBundle\Form\AnunciosType', $anuncio);
         $form->handleRequest($request);
 
@@ -44,9 +58,16 @@ class AnunciosController extends Controller
             $em->persist($anuncio);
             $em->flush();
 
+<<<<<<< HEAD
             return $this->redirectToRoute('anuncios_show', array('id' => $anuncios->getId()));
         }
 
+=======
+            return $this->redirectToRoute('anuncios_show', array('id' => $anuncio->getId()));
+        }
+
+
+>>>>>>> david3
         return $this->render('anuncios/new.html.twig', array(
             'anuncio' => $anuncio,
             'form' => $form->createView(),
@@ -102,9 +123,21 @@ class AnunciosController extends Controller
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+<<<<<<< HEAD
             $em = $this->getDoctrine()->getManager();
             $em->remove($anuncio);
             $em->flush();
+=======
+      #      $em = $this->getDoctrine()->getManager();
+      #      $em->remove($anuncio);
+      #      $em->flush();
+      
+      $stmt = $this->getDoctrine()->getEntityManager()
+        ->getConnection()
+        ->prepare("update symfony.anuncios set anuncio_id=NULL, animal_id=NULL where anuncios.id=".$anuncio->getId().";");
+        $stmt->execute();
+    
+>>>>>>> david3
         }
 
         return $this->redirectToRoute('anuncios_index');
@@ -125,4 +158,14 @@ class AnunciosController extends Controller
             ->getForm()
         ;
     }
+<<<<<<< HEAD
+=======
+    public function getName()
+    {
+        return 'animal';
+    }
+    
+    
+    
+>>>>>>> david3
 }

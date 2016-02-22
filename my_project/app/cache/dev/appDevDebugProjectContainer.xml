@@ -22,6 +22,8 @@
       <parameter key="FOSUserBundle">FOS\UserBundle\FOSUserBundle</parameter>
       <parameter key="IndexBundle">IndexBundle\IndexBundle</parameter>
       <parameter key="PaginasIndexBundle">PaginasIndexBundle\PaginasIndexBundle</parameter>
+      <parameter key="DonacionesBundle">DonacionesBundle\DonacionesBundle</parameter>
+      <parameter key="ContactameBundle">ContactameBundle\ContactameBundle</parameter>
       <parameter key="DebugBundle">Symfony\Bundle\DebugBundle\DebugBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
       <parameter key="SensioDistributionBundle">Sensio\Bundle\DistributionBundle\SensioDistributionBundle</parameter>
@@ -2168,7 +2170,11 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
+<<<<<<< HEAD
             <argument>56bc7647669149.06852426</argument>
+=======
+            <argument>56cb55b4952dc4.31571989</argument>
+>>>>>>> david3
           </service>
         </argument>
       </argument>
@@ -2287,7 +2293,18 @@
                 <call method="add">
                   <argument type="service">
                     <service class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
-                      <argument>^/animales/new</argument>
+                      <argument>^/animales</argument>
+                    </service>
+                  </argument>
+                  <argument type="collection">
+                    <argument>ROLE_ADMIN</argument>
+                  </argument>
+                  <argument>null</argument>
+                </call>
+                <call method="add">
+                  <argument type="service">
+                    <service class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
+                      <argument>^/anuncios/new</argument>
                     </service>
                   </argument>
                   <argument type="collection">
@@ -2342,7 +2359,7 @@
                 <call method="add">
                   <argument type="service">
                     <service class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
-                      <argument>^/animales</argument>
+                      <argument>^/anuncios</argument>
                     </service>
                   </argument>
                   <argument type="collection">
@@ -2479,7 +2496,11 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
+<<<<<<< HEAD
             <argument>56bc7647669149.06852426</argument>
+=======
+            <argument>56cb55b4952dc4.31571989</argument>
+>>>>>>> david3
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -2494,7 +2515,18 @@
                 <call method="add">
                   <argument type="service">
                     <service class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
-                      <argument>^/animales/new</argument>
+                      <argument>^/animales</argument>
+                    </service>
+                  </argument>
+                  <argument type="collection">
+                    <argument>ROLE_ADMIN</argument>
+                  </argument>
+                  <argument>null</argument>
+                </call>
+                <call method="add">
+                  <argument type="service">
+                    <service class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
+                      <argument>^/anuncios/new</argument>
                     </service>
                   </argument>
                   <argument type="collection">
@@ -2549,7 +2581,7 @@
                 <call method="add">
                   <argument type="service">
                     <service class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
-                      <argument>^/animales</argument>
+                      <argument>^/anuncios</argument>
                     </service>
                   </argument>
                   <argument type="collection">
@@ -3578,6 +3610,14 @@
       <call method="addPath">
         <argument>/home/ubuntu/workspace/my_project/src/PaginasIndexBundle/Resources/views</argument>
         <argument>PaginasIndex</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/ubuntu/workspace/my_project/src/DonacionesBundle/Resources/views</argument>
+        <argument>Donaciones</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/ubuntu/workspace/my_project/src/ContactameBundle/Resources/views</argument>
+        <argument>Contactame</argument>
       </call>
       <call method="addPath">
         <argument>/home/ubuntu/workspace/my_project/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views</argument>

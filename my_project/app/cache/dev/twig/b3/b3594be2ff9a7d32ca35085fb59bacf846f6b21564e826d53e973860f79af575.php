@@ -1,6 +1,10 @@
 <?php
 
+<<<<<<< HEAD
 /* @WebProfiler/Profiler/search.html.twig */
+=======
+/* WebProfilerBundle:Profiler:search.html.twig */
+>>>>>>> david3
 class __TwigTemplate_7c7baf03259b9730e96286bac6e2472b3db9d90e719e6481fc547559a75b04cf extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -15,8 +19,13 @@ class __TwigTemplate_7c7baf03259b9730e96286bac6e2472b3db9d90e719e6481fc547559a75
 
     protected function doDisplay(array $context, array $blocks = array())
     {
+<<<<<<< HEAD
         $__internal_9fb0ac82665db52ffc3cff5c84185a3e33446843d8026bfea94b3f55df8365e7 = $this->env->getExtension("native_profiler");
         $__internal_9fb0ac82665db52ffc3cff5c84185a3e33446843d8026bfea94b3f55df8365e7->enter($__internal_9fb0ac82665db52ffc3cff5c84185a3e33446843d8026bfea94b3f55df8365e7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Profiler/search.html.twig"));
+=======
+        $__internal_61442a23be8b4831f0a4d3c10fe0e1acda3cea5a6bc13e7cd38d35f13ceb3777 = $this->env->getExtension("native_profiler");
+        $__internal_61442a23be8b4831f0a4d3c10fe0e1acda3cea5a6bc13e7cd38d35f13ceb3777->enter($__internal_61442a23be8b4831f0a4d3c10fe0e1acda3cea5a6bc13e7cd38d35f13ceb3777_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "WebProfilerBundle:Profiler:search.html.twig"));
+>>>>>>> david3
 
         // line 1
         echo "<div id=\"sidebar-search\">
@@ -118,13 +127,21 @@ class __TwigTemplate_7c7baf03259b9730e96286bac6e2472b3db9d90e719e6481fc547559a75
 </div>
 ";
         
+<<<<<<< HEAD
         $__internal_9fb0ac82665db52ffc3cff5c84185a3e33446843d8026bfea94b3f55df8365e7->leave($__internal_9fb0ac82665db52ffc3cff5c84185a3e33446843d8026bfea94b3f55df8365e7_prof);
+=======
+        $__internal_61442a23be8b4831f0a4d3c10fe0e1acda3cea5a6bc13e7cd38d35f13ceb3777->leave($__internal_61442a23be8b4831f0a4d3c10fe0e1acda3cea5a6bc13e7cd38d35f13ceb3777_prof);
+>>>>>>> david3
 
     }
 
     public function getTemplateName()
     {
+<<<<<<< HEAD
         return "@WebProfiler/Profiler/search.html.twig";
+=======
+        return "WebProfilerBundle:Profiler:search.html.twig";
+>>>>>>> david3
     }
 
     public function isTraitable()
