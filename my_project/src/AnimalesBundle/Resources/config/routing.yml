@@ -1,4 +1,0 @@
-animales_animales:
-    resource: "@AnimalesBundle/Resources/config/routing/animales.yml"
-    prefix:   /animales
-

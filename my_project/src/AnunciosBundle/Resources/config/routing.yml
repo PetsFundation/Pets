@@ -1,7 +1,0 @@
-anuncios_anuncios:
-    resource: "@AnunciosBundle/Resources/config/routing/anuncios.yml"
-    prefix:   /anuncios
-
-anuncios_homepage:
-    path:     /anuncios
-    defaults: { _controller: AnunciosBundle:Default:index }
