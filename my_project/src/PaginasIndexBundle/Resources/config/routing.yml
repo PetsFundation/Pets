@@ -1,0 +1,17 @@
+paginas_index_homepage:
+    path:     /paginas
+    defaults: { _controller: PaginasIndexBundle:Default:index}
+paginas_camadas:
+    path:     /camadas
+    defaults: { _controller: PaginasIndexBundle:Default:camadas}
+paginas_adopciones:
+    path:     /adopciones
+    defaults: { _controller: PaginasIndexBundle:Default:adopciones}
+paginas_protectoras:
+    path:     /protectoras
+    defaults: { _controller: PaginasIndexBundle:Default:protectoras}
+paginas_sebusca:
+    path:     /sebusca
+    defaults: { _controller: PaginasIndexBundle:Default:sebusca}
+
+    

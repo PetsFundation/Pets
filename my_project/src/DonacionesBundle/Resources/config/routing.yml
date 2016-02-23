@@ -1,0 +1,3 @@
+donaciones_homepage:
+    path:     /donaciones
+    defaults: { _controller: DonacionesBundle:Default:index }

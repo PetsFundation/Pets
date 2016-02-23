@@ -1,0 +1,11 @@
+index_homepage:
+    path:     /
+    defaults: { _controller: IndexBundle:Default:index }
+
+ani:
+    path:     /animales/new
+    defaults: { _controller: AnimalesBundle:Animales:new }
+
+anunc:
+    path:     /anuncios/new
+    defaults: { _controller: AnunciosBundle:Anuncios:new }

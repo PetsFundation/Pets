@@ -1,0 +1,66 @@
+{% trans_default_domain 'FOSUserBundle' %}
+<div>
+{{ form_start(form, {'role': 'form','method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register form-horizontal'}}) }}
+ 
+         
+      <div class="row">
+          <div class="col-sm-6 col-md-offset-3" align="left">
+             <font style="color: #00BCD4;font-weight: bold; font-size:23px;">Registrarse</font><br><br>
+                       
+           <label>Nombre de usuario</label> 
+            <div class="input-group">
+      <input id="fos_user_registration_form_username" name="fos_user_registration_form[username]" required="required" maxlength="255" pattern=".{2,}" class="form-control" type="text" placeholder="..."><br>
+      <span class="input-group-addon "><span class="glyphicon glyphicon-user"></span></span>    </div><br>
+           
+            <!--{{ form_row(form.username, { 'attr': {'class': 'form-control'} }) }}-->
+            <!--  {{ form_row(form.plainPassword) }} -->
+            <label>Contraseña</label>
+             <div class="input-group">
+      <input id="fos_user_registration_form_plainPassword_first" class="form-control" name="fos_user_registration_form[plainPassword][first]" required="required" type="password" placeholder="..."><br>
+      <span class="input-group-addon "><span class="glyphicon glyphicon-asterisk"></span></span>    </div><br>
+      
+      <label>Confirmar contraseña</label>
+             <div class="input-group">
+      <input id="fos_user_registration_form_plainPassword_second" class="form-control" name="fos_user_registration_form[plainPassword][second]" required="required" type="password" placeholder="...">
+      <span class="input-group-addon "><span class="glyphicon glyphicon-asterisk"></span></span>    </div><br>
+      
+      <label>E-mail</label>
+             <div class="input-group">
+       <input id="fos_user_registration_form_email" name="fos_user_registration_form[email]" required="required" class="form-control" type="email" placeholder="...">
+          
+            <!--{{ form_row(form.email, { 'attr': {'class': 'form-control'} }) }}--><br>
+      <span class="input-group-addon "><span class="glyphicon glyphicon-envelope"></span></span>    </div><br>
+      
+         
+        {% if is_granted('ROLE_ADMIN') %}
+        <center>
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="password">Rol:</label>
+          <br>
+            <select style="" id="fos_user_registration_form_roles" name="fos_user_registration_form[roles][]" required="required" multiple="multiple">
+                <option value="ROLE_ADMIN" >ADMINISTRADOR</option>
+                <option value="ROLE_SUPERADMIN" >SUPERADMINISTRADOR</option>
+                <option value="ROLE_USER"  selected="selected">USUARIO</option>
+            </select>
+            
+        </div>
+        </center>
+        {% else %}
+          <div class="col-sm-10">
+              {{ form_row(form.roles) }}
+            
+          </div>
+      
+      {% endif %}
+            
+      
+            <input id="botonPublicar" class="btn btn-info" type="submit" id="_submit" name="_submit" value="Registrarse" style='width:100%; height:40px; font-size:20px' />
+      
+                  </div>
+              </div>
+        
+ 
+
+
+{{form_end(form) }}
+</div>

@@ -1,0 +1,86 @@
+{% extends "IndexBundle:Default:index.html.twig" %}
+
+{% block body %}
+	<style>
+		#imagen {
+			display: inline-block;
+			vertical-align: middle;
+			-webkit-transform: translateZ(0);
+			transform: translateZ(0);
+			box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-transition-duration: 0.5s;
+			transition-duration: 0.5s;
+		}
+		#imagen:hover, #imagen:focus, #imagen:active {
+			-webkit-transform: scale(1.1);
+			transform: scale(1.1);
+			-webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+			transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+		}
+		
+		
+		#imagen {
+			display: inline-block;
+			vertical-align: middle;
+			-webkit-transform: translateZ(0);
+			transform: translateZ(0);
+			box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-transition-duration: 0.5s;
+			transition-duration: 0.5s;
+		}
+		#imagen:hover, #imagen:focus, .#imagen:active {
+			-webkit-transform: scale(0.8);
+			transform: scale(0.8);
+			-webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+			transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+		}
+	
+	
+	</style>
+	<div class="row">
+		<div class="col-sm-12">
+			<input type="button" class="btn botonMenuPaginaPrincipal" style="background-image:url(/my_project/web/bundles/index/imgs/imgs/buscaPerd.jpg);
+			background-repeat:no-repeat;
+			background-position:center; background-size: 330px ;" style="background-image:url(/my_project/web/bundles/index/imgs/imgs/labrador.jpg);
+			background-repeat:no-repeat;
+			background-position:center;" onclick="location.href='{{ path("paginas_sebusca") }}'" value="Se busca" id="imagen">
+			<label class="hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+			<div class="visible-xs"><br></div>
+	
+			<input type="button" class="btn botonMenuPaginaPrincipal" style="background-image:url(/my_project/web/bundles/index/imgs/imgs/protectora.jpg);
+			background-repeat:no-repeat;
+			background-position:center; background-size: 300px ;" onclick="location.href='{{ path("paginas_protectoras") }}'" value="Protectoras" id="imagen">
+			<label class="hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+			<div class="visible-xs"><br></div>
+	
+			<input type="button" class="btn botonMenuPaginaPrincipal" style="background-image:url(/my_project/web/bundles/index/imgs/imgs/labrador.jpg);
+			background-repeat:no-repeat;
+			background-position:center;" onclick="location.href='{{ path("paginas_camadas") }}'" value="Camadas" id="imagen">
+			<br><br>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-sm-12">
+			<a href="{{ path("paginas_adopciones") }}"><input type="button" class="btn botonMenuPaginaPrincipal" style="background-image:url(/my_project/web/bundles/index/imgs/imgs/adopttt.jpg);
+			background-repeat:no-repeat;
+			background-position:center; background-size: 310px ;" onclick="location.href='{{ path("paginas_adopciones") }}'" value="Adopciones" id="imagen"></a>
+			<label class="hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+			<div class="visible-xs"><br></div>
+			<input type="button" class="btn botonMenuPaginaPrincipal" style="background-image:url(/my_project/web/bundles/index/imgs/imgs/foro.jpg);
+			background-repeat:no-repeat;
+			background-position:center; background-size: 320px ;" value="Foro" id="imagen" onclick="location.href='/my_project/phpBB3/'">
+			<label class="hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+			<div class="visible-xs"><br></div>
+			<input type="button" class="btn botonMenuPaginaPrincipal" style="background-image:url(/my_project/web/bundles/index/imgs/imgs/donaciones.png);
+			background-repeat:no-repeat;
+			background-position:center; background-size: 300px ;" onclick="location.href='{{ path("donaciones_homepage") }}'" value="Donaciones" id="imagen">
+		</div>
+	</div>
+{% endblock body %}

@@ -1,0 +1,24 @@
+propietario_index:
+    path:     /
+    defaults: { _controller: "PropietarioBundle:Propietario:index" }
+    methods:  GET
+
+propietario_show:
+    path:     /{id}/show
+    defaults: { _controller: "PropietarioBundle:Propietario:show" }
+    methods:  GET
+
+propietario_new:
+    path:     /new
+    defaults: { _controller: "PropietarioBundle:Propietario:new" }
+    methods:  [GET, POST]
+
+propietario_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "PropietarioBundle:Propietario:edit" }
+    methods:  [GET, POST]
+
+propietario_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "PropietarioBundle:Propietario:delete" }
+    methods:  DELETE
